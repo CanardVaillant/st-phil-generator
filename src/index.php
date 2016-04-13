@@ -69,7 +69,7 @@ Pour troller un peu un certain maire qui préfère soigner son égo plutot que..
 			$hashMDP = $millierMDP + $centaineMDP + $dizaineMDP + $uniteMDP;
 			if ($hashID==$hashMDP) {
 				$possibilities++;
-				echo "| ".$stringID." | ".$stringMDP."|</br>";
+				echo "| ".$stringID." | ".$stringMDP." |</br>";
 			}
 			$i++;
 		}
