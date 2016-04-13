@@ -36,13 +36,16 @@
 
       <div class="starter-template">
 
+	<p>
+# st-phil-generator</br></br>
+## Générateur de ID et MDP</br></br>
 
-	
-		<h1>Générateur de ID et MDP</h1>
-        <p>Pour troller un peu un certain maire qui préfère soigner son égo plutot que... Ouais, la liste est trop longue. Déjà, d'écrire de vrai mot de passe ayant plus de possibilités que ce qu'il y a là. Ensuite, de créer un <strong>vrai</strong> système de mot de passe pour ses questionnaires, où le mot de passe sert vraiment à vérouiller l'accès. Bref, amusez-vous bien avec ça !</p>
-		<p>( Après, peut-être que la sécurité informatique, c'est comme la culture et les services associatifs, ça passe après le sport, qui sait ? )</p>
-		<table class="table">
-		<tr><th>ID</th><th>MDP</th></tr>
+Pour troller un peu un certain maire qui préfère soigner son égo plutot que... Ouais, la liste est trop longue. Déjà, d'écrire de vrai mot de passe ayant plus de possibilités que ce qu'il y a là. Ensuite, de créer un **vrai** système de mot de passe pour ses questionnaires, où le mot de passe sert vraiment à vérouiller l'accès. Bref, amusez-vous bien avec ça !</br></br>
+
+( Après, peut-être que la sécurité informatique, c'est comme la culture et les services associatifs, ça passe après le sport, qui sait ? )</br></br>
+		
+| ID     | MDP    |</br>
+| ------ | ------ |</br>
 		<?php
 		$i = 3000;
 		$possibilities = 0;
@@ -66,7 +69,7 @@
 			$hashMDP = $millierMDP + $centaineMDP + $dizaineMDP + $uniteMDP;
 			if ($hashID==$hashMDP) {
 				$possibilities++;
-				echo "<tr><td>".$stringID."</td><td>".$stringMDP."</td></tr>";
+				echo "| ".$stringID." | ".$stringMDP."|</br>";
 			}
 			$i++;
 		}
@@ -75,7 +78,8 @@
 		?>
 		</table>
 
-		Vous noterez que cela nous fait en tout <?php echo $possibilities; ?> possibilités :) ( <em>#SoSecure</em> )
+		<br />Vous noterez que cela nous fait en tout <?php echo $possibilities; ?> possibilités :) ( *#SoSecure* )
+		</p>
 		
 
       </div>
